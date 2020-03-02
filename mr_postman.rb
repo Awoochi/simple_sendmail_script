@@ -16,9 +16,11 @@ def send_mail(filepath)
 # Mail body
 Mail.deliver do
     from    'mrpostman@gmail.com'
-    to      'kurilaa@yahoo.com'
+    to      'thatguy@gmail.com'
     subject 'Test message from Mr.Postman with attachment.'
     body    'Hello there!'
-    add_file filepath #'P:\RubyPrograms\Test.txt'
+    add_file filepath
   end
 end
+
+send_mail('P:\RubyPrograms\Test.txt')
